@@ -1,0 +1,18 @@
+{
+    "scope": "source.c",
+
+    "completions":
+    [
+        {"trigger": "mu_test", "contents": "MU_TEST(${1:test})\n{\n    ${2:// code }\n}"},
+        {"trigger": "mu_run_test", "contents": "MU_RUN_TEST(${1:test});"},
+        {"trigger": "mu_test_suite", "contents": "MU_TEST_SUITE(${1:test_suite})\n{\n    ${2:// code}\n}"},
+        {"trigger": "mu_run_suite", "contents": "MU_RUN_SUITE(${1:test_suite});"},
+        {"trigger": "mu_report", "contents": "MU_REPORT();"},
+        {"trigger": "mu_check", "contents": "mu_check(${1:test});"},
+        {"trigger": "mu_assert", "contents": "mu_assert(${1:test}, \"${2:message}\");"},
+        {"trigger": "mu_fail", "contents": "mu_fail(\"${1:message}\");"},
+        {"trigger": "mu_assert_int_eq", "contents": "mu_assert_int_eq(${1:expected}, ${2:result});"},
+        {"trigger": "mu_assert_double_eq", "contents": "mu_assert_double_eq(${1:expected}, ${2:result});"},
+        {"trigger": "mu_assert_string_eq", "contents": "mu_assert_string_eq(${1:expected}, ${2:result});"},
+    ]
+}
